@@ -142,7 +142,8 @@ footer {
 }
 
 table {
-	margin: 10px 0 0;
+	margin: 10px 0 10px;
+
 }
 
 th  {
@@ -154,6 +155,7 @@ th  {
 td, th {
 	border: 1px solid #000000;
 	padding: 5px 20px;
+	
 }
 
 main{
@@ -165,14 +167,102 @@ form{
 	margin:40px 0;
 }
 
-form label {
+form label, Form legend {
 	display:block;
 	font-size: 20px;
 	margin:0 0 10px;
 }
-form input{
+.input-padrao{
 	display:block;
 	margin:0 0 20px;
 	padding: 10px 25px;
 	width: 50%;
+}
+
+.enviar{
+	 width:40% ;
+	 padding: 15px 0;
+	 background: orange;
+	 color: #FFF;
+	 font-weight: bold;
+	 font-size:18px;
+	 border: none;
+	 border-radius: 5px;
+	 transition: 1s all;
+	 cursor: pointer;
+}
+
+.enviar:hover{
+	background: darkorange;
+	transform:scale(1.2);
+}
+
+@keyframes movimento {
+		0%{
+			margin-left:0;
+		}
+		50%{
+			margin-left:100px;
+		}
+		100%{
+			margin-left:0;
+		}
+	}
+
+.Logo:hover{
+	animation:movimento 1s infinite;
+}
+
+.banner{
+	width:100% ;
+}
+.titulo-principal{
+	text-align: center;
+	font-size: 2em;
+	margin:0 0 1em ;
+	clear: left;
+}
+.principal p{
+	margin: 0 0 1em;
+}
+
+.principal strong{
+	font-weight: bold;	
+}
+.principal em{
+	font-style: italic;
+}
+section{
+width:1000px ;
+margin:0 auto ;
+}
+
+.imagembeneficios{
+	width: 60%;
+}
+
+.utensilios{
+	width: 120px;
+	float:left;
+	margin:0 20px 20px;
+	
+
+}
+.titulo-beneficios{
+	text-align: center;
+	font-size: 30px;
+	clear:left;
+
+}
+.degrade{
+	width: 100%;
+    height: 10px;
+    position: absolute;
+    margin-top: 283px;
+    top: 0;
+    background: #000;
+	background-image: linear-gradient(#BBB, black);
+}
+.fontdiferenciada{
+	font-family:"Montserrat" sans-serif;
 }

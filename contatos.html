@@ -10,7 +10,7 @@
 	<body>
 		<header>
 			<div class="caixa">
-				<h1><img src="logo.png"></h1>
+				<h1><img src="logo.png"alt="Logo da Barbearia Alura"></h1>
 
 				<nav>
 					<ul>
@@ -24,16 +24,72 @@
         <main>
 			<form>
 				<label for="nomeesobrenome">Nome e sobrenome</label>
-				<input type="text" id="nomeesobrenome">
+				<input type="text" id="nomeesobrenome" class="input-padrao"required>
 
 				<label for="email">Email</label>
-				<input type="text" id="email">
-				<label for="Telefone">telefone</label>
-				<input type="text" id="Telefone">
+				<input type="email" id="email"class="input-padrao"required placeholder="seuemail@gmail.com">
 
-				<input type="submit"value="formulário">
+				<label for="tel">Telefone</label>
+				<input type="text" id="Telefone"class="input-padrao"required placeholder="(XX) XXXXXXXXX">
 
+				<label for="mensagens">Mensagem</label>
+				<textarea cols="30" rows="10" id="mensagem"class="input-padrao"required></textarea>
+
+				<fieldset>
+				
+				<legend>Como prefere o nosso contato</legend>
+
+					<label for="radio-email">
+						<input type="radio" name="contato" value="email" id="radio-email"/> 
+						Email
+					</label>
+
+					<label for="radio-telefone"><input type="radio" name="contato" value="email" id="telefone"/>Telefone</label>
+					
+					
+					<label for="radio-whatsapp">
+						<input type="radio" name="contato" value="whatsapp"id="radio-whatsapp"Checked >
+						WhatsApp
+					</label>
+				</fieldset>
+				<fieldset>				
+				<select>	
+					<p>QUal horário prefere ser atendido?</p>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+				</select>
+				</fieldset>
+
+				<label><input type="checkbox"checked>Gostaria de receber nossas novidades por Email? </label>
+				<input type="submit"value="Enviar formulário"class="enviar">
 			</form>
+			<table>
+				<thead>
+				<tr>
+					<th>Dia</th>
+					<th>Horário</th>
+				</tr>
+				</thead>
+					<tbody>
+				<tr>
+					<td>Segunda</td>
+					<td>8h ~ 20h</td>
+				</tr>
+				<tr>
+					<td>Quarta</td>
+					<td>8h ~ 20h</td>
+
+				</tr>
+				<tr>
+					<td>Sexta</td>
+					<td>8h ~ 20h</td>
+
+				</tr>
+			</tbody>
+
+			</table>
+
         </main>
         <footer>
 			<img src="logo-branco.png">
